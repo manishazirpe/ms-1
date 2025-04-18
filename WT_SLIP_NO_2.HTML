@@ -1,0 +1,56 @@
+   Q1)  <!DOCTYPE html>
+<html>
+<head>
+    <title>Beverage List</title>
+</head>
+<body>
+    <ul>
+        <li>Tea
+            <ul>
+                <li>Hot tea</li>
+                <li>Black tea</li>
+            </ul>
+        </li>
+        <li>Coffee
+            <ul>
+                <li>Cold coffee</li>
+                <li>Hot coffee</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html> 
+
+Q2) [19:15, 18/04/2025] Manisha: <!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Form</title>
+</head>
+<body>
+    <h2>Enter Employee Details</h2>
+    <form action="employee_display.php" method="post">
+        Name: <input type="text" name="name" required><br><br>
+        Salary: <input type="number" name="salary" required><br><br>
+        Designation: <input type="text" name="designation" required><br><br>
+        Address: <textarea name="address" rows="4" cols="30" required></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+ <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['name'];
+    $salary = $_POST['salary'];
+    $designation = $_POST['designation'];
+    $address = $_POST['address'];
+    
+    echo "<h2>Employee Details</h2>";
+    echo "Name: " . htmlspecialchars($name) . "<br>";
+    echo "Salary: " . htmlspecialchars($salary) . "<br>";
+    echo "Designation: " . htmlspecialchars($designation) . "<br>";
+    echo "Address: " . nl2br(htmlspecialchars($address)) . "<br>";
+} else {
+    echo "No data received.";
+}
+?>
