@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <title>पदाधिकारी | ग्रामपंचायत जैनपूर</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <div class="top-left">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+        <span data-mar="भारत सरकार" data-eng="Government of India">भारत सरकार</span>
+    </div>
+    <button class="lang" id="langBtn">English</button>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="logo-area">
+        <img src="https://gogalgaon.myvp.in/government_of_maharashtra.png">
+    </div>
+
+    <div class="title-area">
+        <h1 data-mar="ग्रामपंचायत जैनपूर" data-eng="Gram Panchayat Jainpur">ग्रामपंचायत जैनपूर</h1>
+        <a href="#" data-mar="जैनपूर तालुका नेवासा जिल्हा अहिल्यानगर" data-eng="Jainpur Taluka Nevasa District Ahilyanagar">
+            जैनपूर तालुका नेवासा जिल्हा अहिल्यानगर
+        </a>
+        <p><small data-mar="सत्यमेव जयते" data-eng="Satyameva Jayate">सत्यमेव जयते</small></p>
+    </div>
+
+    <div class="search-area">
+        <input type="text" placeholder="शोध - मुख्यशब्द, वाक्य" data-mar="शोध - मुख्यशब्द, वाक्य" data-eng="Search - keyword, phrase">
+        <button data-mar="शोध" data-eng="Search">शोध</button>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html" data-mar="मुख्यपृष्ठ" data-eng="Home">मुख्यपृष्ठ</a></li>
+        <li><a href="gavavishayi.html" data-mar="गावाविषयी" data-eng="About Village">गावाविषयी</a></li>
+        <li><a href="padadhikari.html" data-mar="पदाधिकारी" data-eng="Representatives">पदाधिकारी</a></li>
+        <li><a href="adhikari.html" data-mar="अधिकारी" data-eng="Officers">अधिकारी</a></li>
+
+        <!-- DROPDOWN -->
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown()">
+                <span data-mar="शासकीय योजना" data-eng="Government Schemes">
+                    शासकीय योजना
+                </span>
+                <i class="fa fa-caret-down"></i>
+            </a>
+
+            <div class="dropdown-content" id="schemeDropdown">
+                <a href="jal-jeevan.html"
+                   data-mar="जल जीवन मिशन"
+                   data-eng="Jal Jeevan Mission">
+                   जल जीवन मिशन
+                </a>
+
+                <a href="pmay.html"
+                   data-mar="प्रधानमंत्री आवास योजना"
+                   data-eng="PM Awas Yojana">
+                   प्रधानमंत्री आवास योजना
+                </a>
+
+               <a href="swachh_bharat.html"
+   data-mar="स्वच्छ भारत मिशन"
+   data-eng="Swachh Bharat Mission">
+   स्वच्छ भारत मिशन
+</a>
+
+
+
+            </div>
+        </li>
+
+        <li><a href="nagrik-seva.html" data-mar="नागरिक सेवा" data-eng="Citizen Services">नागरिक सेवा</a></li>
+        <li><a href="photo.html" data-mar="फोटो गॅलरी" data-eng="Photo Gallery">फोटो गॅलरी</a></li>
+    </ul>
+</nav>
+
+<section class="padadhikari-section">
+
+     <h2 class="padadhikari-title"
+        data-mar="पदाधिकारी"
+        data-eng="Representatives">
+        पदाधिकारी
+    </h2>
+
+    <div class="padadhikari-grid">
+
+        <!-- Card 1 -->
+      <div class="padadhikari-card">
+    <img src="devendra.avif" alt="Devendra Fadnavis">
+    <h3 data-mar="श्री. देवेंद्र फडणवीस" data-eng="Shri. Devendra Fadnavis">श्री. देवेंद्र फडणवीस</h3>
+    <p data-mar="माननीय मुख्यमंत्री" data-eng="Hon'ble Chief Minister">माननीय मुख्यमंत्री</p>
+</div>
+
+
+        <!-- Card 2 -->
+        <div class="padadhikari-card">
+    <img src="eknath.jpg" alt="Eknath Shinde">
+    <h3 data-mar="श्री. एकनाथ शिंदे" data-eng="Shri. Eknath Shinde">श्री. एकनाथ शिंदे</h3>
+    <p data-mar="माननीय उपमुख्यमंत्री (नागरिक व गृहनिर्माण)" data-eng="Hon'ble Deputy Chief Minister (Citizen & Housing)">माननीय उपमुख्यमंत्री (नागरिक व गृहनिर्माण)</p>
+</div>
+
+
+        <!-- Card 3 -->
+<div class="padadhikari-card">
+    <img src="ajeetji.webp" alt="Ajit Pawar">
+    <h3 data-mar="श्री. अजित पवार" data-eng="Shri. Ajit Pawar">श्री. अजित पवार</h3>
+    <p data-mar="माननीय उपमुख्यमंत्री (वित्त व नियोजन)" data-eng="Hon'ble Deputy Chief Minister (Finance & Planning)">
+        माननीय उपमुख्यमंत्री (वित्त व नियोजन)
+    </p>
+</div>
+
+<!-- Card 4 -->
+<div class="padadhikari-card">
+    <img src="jaykumar.png" alt="Jaykumar Gore">
+    <h3 data-mar="श्री. जयकुमार गोरे" data-eng="Shri. Jaykumar Gore">श्री. जयकुमार गोरे</h3>
+    <p data-mar="माननीय मंत्री, ग्रामविकास व पंचायत राज" data-eng="Hon'ble Minister, Rural Development & Panchayat Raj">
+        माननीय मंत्री, ग्रामविकास व पंचायत राज
+    </p>
+</div>
+
+<!-- Card 5 -->
+<div class="padadhikari-card">
+    <img src="yogesh.png" alt="Yogesh Kadam">
+    <h3 data-mar="श्री. योगेश कदम" data-eng="Shri. Yogesh Kadam">श्री. योगेश कदम</h3>
+    <p data-mar="माननीय राज्यमंत्री, ग्रामविकास व पंचायत राज" data-eng="Hon'ble Minister of State, Rural Development & Panchayat Raj">
+        माननीय राज्यमंत्री, ग्रामविकास व पंचायत राज
+    </p>
+</div>
+
+
+    </div>
+</section>
+
+<section class="gp-section gram-panchayat">
+  <h2 data-mar="ग्रामपंचायत जैनपूर" data-eng="Gram Panchayat Jainpur">
+      ग्रामपंचायत जैनपूर
+  </h2>
+
+ <p data-mar="महाराष्ट्र ग्रामपंचायत अधिनियम १९५८ नुसार प्रत्येक खेड्यासाठी ग्रामपंचायत असते."
+   data-eng="As per the Maharashtra Gram Panchayat Act 1958, every village has a Gram Panchayat.">
+   महाराष्ट्र ग्रामपंचायत अधिनियम १९५८ नुसार प्रत्येक खेड्यासाठी ग्रामपंचायत असते.
+</p>
+
+<p data-mar="ग्रामपंचायत ही शासन व नागरिक यांच्यातील महत्त्वाचा दुवा आहे."
+   data-eng="The Gram Panchayat serves as an important link between the government and citizens.">
+   ग्रामपंचायत ही शासन व नागरिक यांच्यातील महत्त्वाचा दुवा आहे.
+</p>
+
+<p data-mar="सरपंच अध्यक्ष म्हणून व ग्रामसेवक सचिव म्हणून काम पाहतात."
+   data-eng="The Sarpanch works as the President and the Gram Sevak acts as the Secretary.">
+   सरपंच अध्यक्ष म्हणून व ग्रामसेवक सचिव म्हणून काम पाहतात.
+</p>
+
+<ul class="gp-list">
+    <li data-mar="एकूण सदस्य : १०" data-eng="Total Members: 10">एकूण सदस्य : १०</li>
+    <li data-mar="५०% जागा महिलांसाठी आरक्षित" data-eng="50% seats reserved for women">५०% जागा महिलांसाठी आरक्षित</li>
+    <li data-mar="सरपंच पद : अनुसूचित जाती – स्त्री" data-eng="Sarpanch Post: Scheduled Caste – Female">सरपंच पद : अनुसूचित जाती – स्त्री</li>
+    <li data-mar="स्थापना दिनांक : २७/११/२०२३" data-eng="Established on: 27/11/2023">स्थापना दिनांक : २७/११/२०२३</li>
+</ul>
+
+  
+
+  <style>
+    .gp-section.gram-panchayat {
+      background: linear-gradient(135deg, #e0f2f1, #b2dfdb);
+      padding: 40px 25px;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gp-section.gram-panchayat:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+    .gp-section.gram-panchayat h2 {
+      font-size: 2rem;
+      color: #00695c;
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    .gp-section.gram-panchayat h2::after {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 4px;
+      background: #004d40;
+      margin: 8px auto 0;
+      border-radius: 2px;
+    }
+    .gp-section.gram-panchayat p {
+      font-size: 1rem;
+      color: #004d40;
+      margin-bottom: 15px;
+      line-height: 1.7;
+    }
+    .gp-section.gram-panchayat .gp-list li {
+      background: #b2dfdb;
+      margin: 10px 0;
+      padding: 12px 18px;
+      border-radius: 10px;
+      color: #004d40;
+      font-weight: 500;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .gp-section.gram-panchayat .gp-list li:hover {
+      background: #80cbc4;
+      transform: translateX(5px);
+    }
+    @media (max-width: 768px) {
+      .gp-section.gram-panchayat {
+        padding: 25px 15px;
+      }
+      .gp-section.gram-panchayat h2 {
+        font-size: 1.5rem;
+      }
+      .gp-section.gram-panchayat .gp-list li {
+        font-size: 0.95rem;
+        padding: 10px 15px;
+      }
+    }
+  </style>
+</section>
+
+
+  <table class="gp-table small">
+    <tr>
+      <th>अ.न.</th>
+      <th data-mar="वय गट" data-eng="Age Group">वय गट</th>
+      <th data-mar="संख्या" data-eng="Count">संख्या</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td data-mar="९० वर्षांवरील" data-eng="Above 90 years">९० वर्षांवरील</td>
+      <td data-mar="८" data-eng="8">८</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td data-mar="८० वर्षांवरील" data-eng="Above 80 years">८० वर्षांवरील</td>
+      <td data-mar="३२" data-eng="32">३२</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td data-mar="७० वर्षांवरील" data-eng="Above 70 years">७० वर्षांवरील</td>
+      <td data-mar="८८" data-eng="88">८८</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td data-mar="६० वर्षांवरील" data-eng="Above 60 years">६० वर्षांवरील</td>
+      <td data-mar="१८७" data-eng="187">१८७</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td data-mar="५० वर्षांवरील" data-eng="Above 50 years">५० वर्षांवरील</td>
+      <td data-mar="३६७" data-eng="367">३६७</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td data-mar="PWD अपंग मतदार" data-eng="PWD Voters">PWD अपंग मतदार</td>
+      <td data-mar="११" data-eng="11">११</td>
+    </tr>
+</table>
+
+</section>
+  </p>
+</section>
+<section class="gp-section">
+  <h2 data-mar="ग्रामपंचायत रचना"
+      data-eng="Gram Panchayat Structure">
+      ग्रामपंचायत रचना
+  </h2>
+
+<ul class="gp-list">
+  <li data-mar="एकूण सदस्य : १०" data-eng="Total Members: 10">एकूण सदस्य : १०</li>
+  <li data-mar="५०% जागा महिलांसाठी आरक्षित" data-eng="50% Seats Reserved for Women">५०% जागा महिलांसाठी आरक्षित</li>
+  <li data-mar="सरपंच पद : अनुसूचित जाती – स्त्री" data-eng="Sarpanch Position: Scheduled Caste – Female">सरपंच पद : अनुसूचित जाती – स्त्री</li>
+  <li data-mar="स्थापना दिनांक : २७/११/२०२३" data-eng="Established On: 27/11/2023">स्थापना दिनांक : २७/११/२०२३</li>
+</ul>
+
+
+  <style>
+    .gp-list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    .gp-list li {
+      background: linear-gradient(90deg, #81c784, #66bb6a);
+      color: #fff;
+      font-weight: 600;
+      padding: 12px 18px;
+      margin-bottom: 12px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gp-list li:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      background: linear-gradient(90deg, #66bb6a, #43a047);
+    }
+
+    @media (max-width: 768px) {
+      .gp-list li {
+        font-size: 0.95rem;
+        padding: 10px 15px;
+      }
+    }
+  </style>
+</ul>
+
+</section>
+<section class="gp-section">
+  <h2 data-mar="ग्रामपंचायत सदस्य मंडळ"
+      data-eng="Gram Panchayat Members">
+      ग्रामपंचायत सदस्य मंडळ
+  </h2>
+
+  <table class="gp-table">
+  <tr>
+  <th>अ.न.</th>
+  <th data-mar="नाव" data-eng="Name">नाव</th>
+  <th data-mar="पद" data-eng="Position">पद</th>
+  <th data-mar="प्रवर्ग" data-eng="Category">प्रवर्ग</th>
+</tr>
+
+
+    <tr>
+  <td>1</td>
+  <td data-mar="श्रीमती शैला किशोर शिरसाठ" data-eng="Mrs. Shaila Kishor Shirsath">श्रीमती शैला किशोर शिरसाठ</td>
+  <td data-mar="सरपंच" data-eng="Sarpanch">सरपंच</td>
+  <td data-mar="अनु. जाती स्त्री" data-eng="SC Woman">अनु. जाती स्त्री</td>
+</tr>
+
+<tr>
+  <td>2</td>
+  <td data-mar="सौ. सविता संदीप सुरुसे" data-eng="Mrs. Savita Sandeep Suruse">सौ. सविता संदीप सुरुसे</td>
+  <td data-mar="उपसरपंच" data-eng="Deputy Sarpanch">उपसरपंच</td>
+  <td data-mar="सर्वसाधारण" data-eng="General">सर्वसाधारण</td>
+</tr>
+
+<tr>
+  <td>3</td>
+  <td data-mar="सौ. संध्या किरण डिके" data-eng="Mrs. Sandhya Kiran Dike">सौ. संध्या किरण डिके</td>
+  <td data-mar="सदस्या" data-eng="Member">सदस्या</td>
+  <td data-mar="सर्वसाधारण स्त्री" data-eng="General Woman">सर्वसाधारण स्त्री</td>
+</tr>
+
+<tr>
+  <td>4</td>
+  <td data-mar="सौ. हिराबाई बाळासाहेब डिके" data-eng="Mrs. Hirabai Balasaheb Dike">सौ. हिराबाई बाळासाहेब डिके</td>
+  <td data-mar="सदस्या" data-eng="Member">सदस्या</td>
+  <td data-mar="सर्वसाधारण स्त्री" data-eng="General Woman">सर्वसाधारण स्त्री</td>
+</tr>
+
+<tr>
+  <td>5</td>
+  <td data-mar="श्री. शिवाजी निवृत्ती गिते" data-eng="Shri. Shivaji Nivrutti Gite">श्री. शिवाजी निवृत्ती गिते</td>
+  <td data-mar="सदस्य" data-eng="Member">सदस्य</td>
+  <td data-mar="सर्वसाधारण" data-eng="General">सर्वसाधारण</td>
+</tr>
+
+<tr>
+  <td>6</td>
+  <td data-mar="श्री. कानिफनाथ अशोक डिके" data-eng="Shri. Kanifnath Ashok Dike">श्री. कानिफनाथ अशोक डिके</td>
+  <td data-mar="सदस्य" data-eng="Member">सदस्य</td>
+  <td data-mar="सर्वसाधारण स्त्री" data-eng="General Woman">सर्वसाधारण स्त्री</td>
+</tr>
+
+<tr>
+  <td>7</td>
+  <td data-mar="सौ. ताराबाई कडू गव्हाणे" data-eng="Mrs. Tarabai Kadu Gawhane">सौ. ताराबाई कडू गव्हाणे</td>
+  <td data-mar="सदस्या" data-eng="Member">सदस्या</td>
+  <td data-mar="सर्वसाधारण स्त्री" data-eng="General Woman">सर्वसाधारण स्त्री</td>
+</tr>
+
+<tr>
+  <td>8</td>
+  <td data-mar="श्री. अर्जुन नारायण शिरसाठ" data-eng="Shri. Arjun Narayan Shirsath">श्री. अर्जुन नारायण शिरसाठ</td>
+  <td data-mar="सदस्य" data-eng="Member">सदस्य</td>
+  <td data-mar="अनु. जाती पुरुष" data-eng="SC Man">अनु. जाती पुरुष</td>
+</tr>
+
+<tr>
+  <td>9</td>
+  <td data-mar="श्री. संदीप दादा डिके" data-eng="Shri. Sandeep Dada Dike">श्री. संदीप दादा डिके</td>
+  <td data-mar="सदस्य" data-eng="Member">सदस्य</td>
+  <td data-mar="सर्वसाधारण" data-eng="General">सर्वसाधारण</td>
+</tr>
+
+<tr>
+  <td>10</td>
+  <td data-mar="सौ. सविता भारत बर्डे" data-eng="Mrs. Savita Bharat Burde">सौ. सविता भारत बर्डे</td>
+  <td data-mar="सदस्या" data-eng="Member">सदस्या</td>
+  <td data-mar="अनु. जमाती स्त्री" data-eng="ST Woman">अनु. जमाती स्त्री</td>
+</tr>
+
+  </table>
+</section>
+<section class="gp-section">
+  <h2 data-mar="महात्मा गांधी तंटामुक्त गाव समिती"
+      data-eng="Mahatma Gandhi Dispute-Free Village Committee">
+      महात्मा गांधी तंटामुक्त गाव समिती
+  </h2>
+
+<table class="gp-table small">
+  <tr>
+    <th>अ.न.</th>
+    <th data-mar="नाव" data-eng="Name">नाव</th>
+    <th data-mar="पद" data-eng="Position">पद</th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td data-mar="श्री. सखाराम कारभारी नागरे" data-eng="Shri. Sakharam Karbhari Nagre">श्री. सखाराम कारभारी नागरे</td>
+    <td data-mar="अध्यक्ष" data-eng="President">अध्यक्ष</td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td data-mar="श्री. अर्जुन शंकर बर्डे" data-eng="Shri. Arjun Shankar Burde">श्री. अर्जुन शंकर बर्डे</td>
+    <td data-mar="उपाध्यक्ष" data-eng="Vice President">उपाध्यक्ष</td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td data-mar="श्रीमती शैला किशोर शिरसाठ" data-eng="Mrs. Shaila Kishor Shirsath">श्रीमती शैला किशोर शिरसाठ</td>
+    <td data-mar="सरपंच" data-eng="Sarpanch">सरपंच</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td data-mar="श्री. अण्णासाहेब कचरू डिके" data-eng="Shri. Annasaheb Kachru Dike">श्री. अण्णासाहेब कचरू डिके</td>
+    <td data-mar="सदस्य" data-eng="Member">सदस्य</td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td data-mar="श्री. देवीलाल हरिभाऊ गरुटे" data-eng="Shri. Devilal Haribhau Garute">श्री. देवीलाल हरिभाऊ गरुटे</td>
+    <td data-mar="सदस्य" data-eng="Member">सदस्य</td>
+  </tr>
+
+  <tr>
+    <td>6</td>
+    <td data-mar="श्री. कालिदास चंद्रभान डिके" data-eng="Shri. Kalidas Chandraban Dike">श्री. कालिदास चंद्रभान डिके</td>
+    <td data-mar="सदस्य" data-eng="Member">सदस्य</td>
+  </tr>
+
+  <tr>
+    <td>7</td>
+    <td data-mar="श्री. सदाशिव नामदेव डिके" data-eng="Shri. Sadashiv Namdev Dike">श्री. सदाशिव नामदेव डिके</td>
+    <td data-mar="सदस्य" data-eng="Member">सदस्य</td>
+  </tr>
+
+  <tr>
+    <td>8</td>
+    <td data-mar="श्री. किशोर शिवाजी शिरसाठ" data-eng="Shri. Kishor Shivaji Shirsath">श्री. किशोर शिवाजी शिरसाठ</td>
+    <td data-mar="मागासवर्गीय सदस्य" data-eng="Backward Class Member">मागासवर्गीय सदस्य</td>
+  </tr>
+
+  <tr>
+    <td>9</td>
+    <td data-mar="श्री. कानिफनाथ अशोक डिके" data-eng="Shri. Kanifnath Ashok Dike">श्री. कानिफनाथ अशोक डिके</td>
+    <td data-mar="उपसरपंच" data-eng="Deputy Sarpanch">उपसरपंच</td>
+  </tr>
+
+  <tr>
+    <td>10</td>
+    <td data-mar="श्री. अण्णासाहेब मच्छिंद्र शिंदे" data-eng="Shri. Annasaheb Machhindr Shinde">श्री. अण्णासाहेब मच्छिंद्र शिंदे</td>
+    <td data-mar="सदस्य" data-eng="Member">सदस्य</td>
+  </tr>
+</table>
+
+</section>
+
+
+    
+
+
+<!-- FOOTER -->
+<footer id="footer">
+    <div id="footer-container">
+        <div id="footer-contact">
+            <h3 data-mar="संपर्क तपशील" data-eng="Contact Details">संपर्क तपशील</h3>
+            <p data-mar="📍 ग्रामपंचायत जैनपूर, तालुका नेवासा, जिल्हा अहमदनगर" data-eng="📍 Gram Panchayat Jainpur, Taluka Nevasa, District Ahmednagar">📍 ग्रामपंचायत जैनपूर, तालुका नेवासा, जिल्हा अहमदनगर</p>
+            <p data-mar="📞 फोन: 9158245633" data-eng="📞 Phone: 9158245633">📞 फोन: 9158245633</p>
+            <p data-mar="✉️ ईमेल:grampanchayatjainpur@gmail.com" data-eng="✉️ Email: grampanchayatjainpur@gmail.com>✉️ ईमेल:grampanchayatjainpur@gmail.com</p>
+            <p data-mar="⏰ कार्यालयीन वेळ: सकाळी 9:45 ते संध्याकाळी 5:45" data-eng="⏰ Office Hours: 9:45 AM to 5:45 PM">⏰ कार्यालयीन वेळ: सकाळी 9:45 ते संध्याकाळी 5:45</p>
+        </div>
+
+        <div id="footer-links">
+    <a href="index.html" class="footer-heading-link">
+        <h3 data-mar="महत्वाचे दुवे" data-eng="Important Links">
+            महत्वाचे दुवे
+        </h3>
+    </a>
+
+    <ul>
+        <li>
+            <a href="index.html" data-mar="मुख्यपृष्ठ" data-eng="Home">
+                मुख्यपृष्ठ
+            </a>
+        </li>
+
+        <li>
+            <a href="gavavishayi.html" data-mar="गावाविषयी" data-eng="About Village">
+                गावाविषयी
+            </a>
+        </li>
+
+        <li>
+            <a href="padadhikari.html" data-mar="पदाधिकारी" data-eng="Representatives">
+                पदाधिकारी
+            </a>
+        </li>
+
+        <li>
+            <a href="adhikari.html" data-mar="अधिकारी" data-eng="Officers">
+                अधिकारी
+            </a>
+        </li>
+
+        <li>
+            <a href="shasakiy-yojana.html" data-mar="शासकीय योजना" data-eng="Government Schemes">
+                शासकीय योजना
+            </a>
+        </li>
+
+        <li>
+            <a href="nagrik-seva.html" data-mar="नागरिक सेवा" data-eng="Citizen Services">
+                नागरिक सेवा
+            </a>
+        </li>
+
+        <li>
+            <a href="photo.html" data-mar="फोटो गॅलरी" data-eng="Photo Gallery">
+                फोटो गॅलरी
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+        <div id="footer-feedback">
+            <h3 data-mar="अभिप्राय आणि तक्रार निवारण" data-eng="Feedback & Complaint Redressal">अभिप्राय आणि तक्रार निवारण</h3>
+            <p data-mar="तुमच्या सूचना आणि तक्रारी आमच्यासाठी महत्वाच्या आहेत." data-eng="Your suggestions and complaints are important to us.">तुमच्या सूचना आणि तक्रारी आमच्यासाठी महत्वाच्या आहेत.</p>
+            <button id="feedback-btn" data-mar="अभिप्राय द्या" data-eng="Give Feedback">अभिप्राय द्या</button>
+        </div>
+    </div>
+
+    <div id="footer-bottom">
+        <p data-mar="© 2026 जैनपूर ग्रामपंचायत. सर्व हक्क राखीव." data-eng="© 2026 Jainpur Gram Panchayat. All rights reserved.">© 2026 जैनपूर ग्रामपंचायत. सर्व हक्क राखीव.</p>
+        <p id="developer">Website developed by</p>
+    </div>
+</footer>
+
+<script>
+/* ================= ALWAYS SCROLL TO TOP ================= */
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    window.scrollTo(0, 0);
+});
+
+/* ================= DROPDOWN ================= */
+function toggleDropdown() {
+    const drop = document.getElementById("schemeDropdown");
+    drop.style.display = (drop.style.display === "block") ? "none" : "block";
+}
+
+/* बाहेर click केल्यावर dropdown बंद */
+document.addEventListener("click", function(e) {
+    const dropdown = document.querySelector(".dropdown");
+    if (dropdown && !dropdown.contains(e.target)) {
+        document.getElementById("schemeDropdown").style.display = "none";
+    }
+});
+
+/* ================= LANGUAGE TOGGLE ================= */
+const langBtn = document.getElementById("langBtn");
+let currentLang = "mar";
+
+langBtn.addEventListener("click", () => {
+    currentLang = currentLang === "mar" ? "eng" : "mar";
+    langBtn.innerText = currentLang === "mar" ? "English" : "मराठी";
+
+    document.querySelectorAll("[data-mar]").forEach(el => {
+        el.innerText = el.dataset[currentLang];
+    });
+});
+</script>
+
+
+  
+
+</body>
+</html>
